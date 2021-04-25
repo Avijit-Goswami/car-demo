@@ -39,7 +39,7 @@ const Album = () => {
   const [cards, setcards] = useState([])
 
   useEffect(() => {
-      axios.get('http://35.238.104.71:7100/api/v1/categories')
+      axios.get('https://cors-anywhere.herokuapp.com/corsdemohttp://35.238.104.71:7100/api/v1/categories')
       .then((res) => {
           setcards(res.data.data)
       })
